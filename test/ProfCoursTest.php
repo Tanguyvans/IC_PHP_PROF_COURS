@@ -292,7 +292,7 @@ class ProfCoursTest extends TestCase
 
         // Avec des ID
         $idProf = 10;
-        $idCours = 8;
+        $idCours = 9;
         // Prof
         $prof = Prof::printOne($conn, $idProf);
         $prof_str = $prof->__toString();
@@ -327,7 +327,7 @@ class ProfCoursTest extends TestCase
 
         // Avec Id en dur.
         $idProf = 10;
-        $idCours = 7;
+        $idCours = 5;
 
         // Prof
         $prof = new Prof($this->nom, $this->prenom, $this->date, $this->lieu);
