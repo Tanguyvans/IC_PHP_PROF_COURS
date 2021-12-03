@@ -7,6 +7,7 @@ use Prof;
 
 class ProfCoursTest extends TestCase
 {
+    
 
     //   #######    DO NOT CHANGE THIS     #########
     const FAKE_DBNAME = "##DB_NAME##";
