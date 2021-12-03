@@ -292,7 +292,7 @@ class ProfCoursTest extends TestCase
 
         // Avec des ID
         $idProf = 10;
-        $idCours = 9;
+        $idCours = 8;
         // Prof
         $prof = Prof::printOne($conn, $idProf);
         $prof_str = $prof->__toString();
@@ -327,7 +327,7 @@ class ProfCoursTest extends TestCase
 
         // Avec Id en dur.
         $idProf = 10;
-        $idCours = 9;
+        $idCours = 7;
 
         // Prof
         $prof = new Prof($this->nom, $this->prenom, $this->date, $this->lieu);
@@ -345,7 +345,6 @@ class ProfCoursTest extends TestCase
         * s’inspirer de test de la modification du prof avec idProf= 10 pour tester la modification du cours dans ayant comme idCours = 9.
         *
         */
-
         $cours = new Cours($this->intitule, $this->duree, $this->date, $this->myprof);
         $val = $cours->updateOne($conn, $idCours);
         $expected_cours_str = $cours->__toString();
