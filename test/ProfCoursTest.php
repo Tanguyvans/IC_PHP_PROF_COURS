@@ -2,7 +2,7 @@
 namespace Test;
 
 use Cours;
-use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\TestCase;kjkjqfhdlk
 use Prof;
 
 class ProfCoursTest extends TestCase
@@ -20,16 +20,16 @@ class ProfCoursTest extends TestCase
 
     public static $conn = null;
     // Prof
-    private $prenom ="REVERGIE"; // a changer
-    private $nom ="TATSUM"; // a changer
-    private $date ="22/07/1984"; // a changer
-    private $lieu ="Toulouse, France"; // a changer
+    private $prenom ="REVEGIE"; // a changer
+    private $nom ="TATSSUM"; // a changer
+    private $date ="22/12/1984"; // a changer
+    private $lieu ="Mons, France"; // a changer
 
     // cours
     private $intitule="Intégratoin continue"; //a remplir
     private $duree="3h";    //a remplir
     private $myprof=2 ;
-
+// salut, comment ça va?
     private static $prof_a = [];
     private static $cours_a = [];
 
