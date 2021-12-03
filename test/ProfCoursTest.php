@@ -29,6 +29,7 @@ class ProfCoursTest extends TestCase
     // cours
     private $intitule="Intégratoin continue"; //a remplir
     private $duree="3h";    //a remplir
+    private $myprof = 191451;
 
     private static $prof_a = [];
     private static $cours_a = [];
@@ -344,7 +345,8 @@ class ProfCoursTest extends TestCase
         * s’inspirer de test de la modification du prof avec idProf= 10 pour tester la modification du cours dans ayant comme idCours = 9.
         *
         */
-        $cours = new Cours($this->intitule, $this->duree, $this->date, $this->prof);
+
+        $cours = new Cours($this->intitule, $this->duree, $this->date, $this->myprof);
         $val = $cours->updateOne($conn, $idCours);
         $expected_cours_str = $cours->__toString();
         $record_cours = Cours::printOne($conn, $idCours);
