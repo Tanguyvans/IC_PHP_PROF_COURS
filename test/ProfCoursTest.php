@@ -288,6 +288,7 @@ class ProfCoursTest extends TestCase
         
            
 
+
         // Avec des ID
         $idProf = 10;
         $idCours = 9;
